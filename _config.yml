@@ -1,0 +1,69 @@
+# ----
+# Site
+
+title: PayU Developers
+url: "http://developers.payulatam.com/es"
+baseurl:
+google_analytics_key:
+show_full_navigation: false
+
+# Values for the jekyll-seo-tag gem (https://github.com/jekyll/jekyll-seo-tag)
+logo: /favicon.png
+description: Documentation for PayU integration options.
+author:
+  name:
+  email: soporte@payulatam.com
+  twitter: # twitter username without the @ symbol
+social:
+  name: PayU Developers
+  links:
+    - http://developers.payulatam.com
+
+# -----
+# Build
+
+collections:
+  others:
+    title: Inicio
+    position: 1
+  webcheckout:
+    title: WebCheckout
+    position: 2
+  api:
+    title: API
+    position: 3
+  administrative:
+    title: Módulo Administrativo
+    position: 5
+  tools:
+    title: Herramientas de Ayuda
+    position: 6
+  help:
+    title: Ayuda y Soporte
+    position: 7
+
+gems:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+#  - jekyll-multiple-languages-plugin
+
+exclude:
+  - readme.md
+  - LICENCE
+
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: default
+
+types:
+  - get
+  - put
+  - delete
+  - post
+
+# languages: ["es", "en", "pt"]
+
+# exclude_from_localizations: ["js", "images", "css", "cert", "busqueda", "sdk", ""]
